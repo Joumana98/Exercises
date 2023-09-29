@@ -68,3 +68,25 @@ void menu(int& num1, int& denom1, int& num2, int& denom2, char& op)
 	}
 
 }
+
+void addFractions(int n1, int d1, int n2, int d2, int& n, int& d)
+{
+	n = n1 * d2 + n2 * d1;
+	d = d1 * d2;
+}
+
+void subtractFractions(int n1, int d1, int n2, int d2, int& n, int& d)
+{
+	n = n1 * d2 - n2 * d1;
+	d = d1 * d2;
+}
+void multiplyFractions(int n1, int d1, int n2, int d2, int& n, int& d)
+{
+	n = n1 * n2;
+	d = d1 * d2;
+}
+void divideFractions(int n1, int d1, int n2, int d2, int& n, int& d)
+{
+	n = n1 * d2;
+	d = d1 * n2;
+}
